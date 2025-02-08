@@ -5,12 +5,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static "global/static/css/output.css" %}">
+    <title>My Tailwind Page</title>
+    <link rel="stylesheet" href="{% static 'global/css/output.css' %}">
 </head>
-<body class="">
-    <div class="bg-red-700 flex flex-col w-full text-white tracking-[2px]">
-        chora
-    </div>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl">Welcome to My Tailwind Page</h1>
+    </header>
+    <main>
+        <section class="relative text-white w-full h-full bg-gradient-to-b from-[#090708] to-[#090708]">
+            <div class="absolute inset-0 z-20  lg:block hidden" style="background: linear-gradient(180deg, rgba(9, 7, 8, 0.80) 0%, rgba(9, 7, 8, 0.00) 100%);"></div>
+            <div class="flex items-end lg:items-start max-w-[1280px] w-full mx-auto text-white lg:p-[60px] px-5 py-[50px] z-30 absolute inset-0">
+              <div class="flex flex-col lg:flex-row lg:items-center h-fit">
+                <h2 class="text-white text-[41.34px] lg:text-[63.12px] font-bold leading-[46px] lg:leading-[66px] lg:w-1/2 w-full text-start h-fit">
+                  There’s no right way to run
+                </h2>
+                <p class="text-white text-base font-normal leading-relaxed lg:w-1/2 w-full mt-1 ">
+                  What’s behind the advanced footwear at Brooks? Our biomechanics
+                  scientists in the run research lab meticulously study and analyze the
+                  mechanics of human movement to better understand how to help
+                  prevent injury, enhance comfort, and improve performance. We found
+                  that each person has their own unique way of running, defined by their
+                  habitual motion path (more on that below). We call this your Run
+                  Signature. Let’s take a stroll through some of our findings.
+                </p>
+              </div>
+            </div>
+            <div class="relative z-10 ">
+              <picture>
+                <!-- Imagem para telas grandes -->
+                <source srcset="https://brooks.fbitsstatic.net/media/banner-assinaturapng.png?v=202502051513" media="(min-width: 640px)">
+                <!-- Imagem para telas pequenas -->
+                <img src="https://brooks.fbitsstatic.net/media/banner-assinatura-mob.png?v=202502051513" alt="Detalhes do calçado" class="w-full h-auto">
+              </picture>
+            </div>
+          </section>
+          <section class="max-w-[1280px] mx-auto lg:px-[60px] px-5 lg:pt-20 pt-10">
+            <div class="flex flex-col lg:flex-row items-start gap-6 lg:gap-[72px]">
+              <!-- Imagem -->
+              <div class="flex-shrink-0">
+                <img 
+                  src="https://brooks.fbitsstatic.net/media/s24-brcom-lp-runsignature-02-xl.jpg.png?v=202502051532" 
+                  alt="Grupo de corredores atravessando uma ponte em ambiente urbano, com destaque para um close-up de um tênis esportivo de corrida com detalhes em branco, amarelo e vermelho sobre uma pista de corrida." 
+                  class="w-full lg:w-auto"
+                />
+              </div>
+              <!-- Texto -->
+              <div class="flex flex-col justify-center gap-7">
+                <h2 class="text-3xl lg:text-[38px] lg:leading-[42px] leading-[34px] font-bold">
+                  Your natural way of running
+                </h2>
+                <p class="text-black text-base leading-relaxed">
+                  Thanks to years of studying the body in motion, our research team
+                  found that every runner’s joints have a path of least resistance, or
+                  habitual motion path (HMP).
+                </p>
+                <p class="text-black text-base leading-relaxed">
+                  When a runner’s joints deviate from their HMP while running, there can
+                  be greater loading on their knees, which can lead to running-related
+                  injuries. Our footwear engineers took these findings and developed
+                  advanced running technology that doesn’t “fix” your run. Instead, our
+                  shoes optimize it and support your distinctive Run Signature.
+                </p>
+                <p class="text-black text-base leading-relaxed">
+                  Based on these scientific findings, our footwear engineers developed
+                  GuideRails® support system — our advanced running technology for
+                  runners who deviate from their HMP.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="max-w-[1280px] mx-auto lg:px-[60px] px-5 lg:pt-20 pt-10">
+            <div class="flex flex-col-reverse lg:flex-row  items-start gap-6 lg:gap-[72px]">
+              <!-- Texto -->
+              <div class="flex flex-col justify-center gap-7">
+                <h2 class="text-3xl lg:text-[38px] lg:leading-[42px] leading-[34px] font-bold">
+                  GuideRails®: Our research in the wild
+                </h2>
+                <p class="text-black text-base leading-relaxed">
+                  Our patented GuideRails® technology is, a direct result of our
+                  research. GuideRails® help support your feet, knees, and hips by
+                  helping reduce excess deviation from your habitual motion path.
+                </p>
+                <p class="text-black text-base leading-relaxed">
+                  Think of them like training wheels on a bike that keep you from falling
+                  over to one side or the other. GuideRails® keep your stride steady and
+                  moving in its natural way while reducing deviation. With this tech in
+                  place, you can run with more comfort and feel confident that your
+                  joints are supported.
+                </p>
+                <p class="text-black text-base leading-relaxed">
+                  Other habitual motion technology expands beyond GuideRails®. The
+                  GlideRoll Rocker in the the Ghost Max offers smooth heel-toe
+                  transitions for an effortless feeling as you move, and the RapidRoll
+                  Rocker in the Hyperion Elite 4 is a curved sculpting of the midsole that
+                  works with the carbon fiber plate to propel you forward.
+                </p>
+                <p class="text-black text-base leading-relaxed">
+                  For runners who tend to stay within their habitual motion path, we
+                  also have a selection of neutral shoes.
+                </p>
+              </div>
+              <!-- Imagem -->
+              <div class="flex-shrink-0">
+                <img 
+                  src="https://brooks.fbitsstatic.net/media/s24-brcom-lp-runsignature-03-xl.jpg.png?v=202502051534" 
+                  alt="Homem correndo em uma ponte metálica sob o céu azul, ao lado de um close-up de um tênis esportivo de corrida cinza com detalhes em azul e amarelo, sendo amarrado antes do treino." 
+                  class="w-full lg:w-auto"
+                />
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 mt-4 text-center">
+        <p>&copy; 2023 My Tailwind Page</p>
+    </footer>
 </body>
 </html>
